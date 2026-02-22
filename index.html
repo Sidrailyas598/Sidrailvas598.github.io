@@ -26,7 +26,7 @@
             overflow-x: hidden;
         }
 
-        /* Mirror Effect Background - Aik Mirror Jaisa */
+        /* Mirror Effect Background */
         body::before {
             content: '';
             position: fixed;
@@ -53,12 +53,8 @@
         }
 
         @keyframes mirrorShine {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
 
         .container {
@@ -78,7 +74,6 @@
             overflow: hidden;
         }
 
-        /* Mirror shine effect on container */
         .container::before {
             content: '';
             position: absolute;
@@ -97,12 +92,8 @@
         }
 
         @keyframes mirrorReflection {
-            from {
-                transform: translateX(-100%) translateY(-100%) rotate(45deg);
-            }
-            to {
-                transform: translateX(100%) translateY(100%) rotate(45deg);
-            }
+            from { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            to { transform: translateX(100%) translateY(100%) rotate(45deg); }
         }
 
         @keyframes slideUp {
